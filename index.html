@@ -214,10 +214,7 @@
 		}
 		document.querySelector("body").addEventListener("click", function() {
 		      var sum=keys.charAt((Math.floor(Math.random()*keys.length))+1);
-		      console.log(sum);
 		if (keyData[sum]){
-		console.log(keyData[sum]);
-		console.log("hi");
 		var maxPoint = new Point(view.size.width, view.size.height);
 		  var newCircle = new Path.Circle((maxPoint * (Point.random())), 200)
 		  newCircle.fillColor = keyData[sum].color;
@@ -246,7 +243,7 @@ circles.splice(i, 1);
       	     </svg>
              <b>P A T A T A P</b>
     	 </h1>
-    	 <h1="header-subtext">Please press any characters from A-Z on your keyboard</h1>
+    	 <h1="header-subtext">Please press any characters from A-Z on your keyboard or tap anywhere on your mobile screen.</h1>
     	 <h1="header-subtext"><em>"Works best on Destops or Laptops"</em></h1>
   	</header>
 	<canvas id="myCanvas" resize></canvas>
